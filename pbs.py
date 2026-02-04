@@ -96,7 +96,7 @@ class PBSSolver(object):
             self.search_stack.append(node)
             return
 
-        index = 0
+        index = len(self.search_stack)
         for i in range(len(self.search_stack)):
             if node['cost'] <= self.search_stack[i]['cost']:
                 index = i
